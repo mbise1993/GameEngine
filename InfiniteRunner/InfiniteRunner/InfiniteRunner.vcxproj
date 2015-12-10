@@ -1,0 +1,374 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{8B139E9F-F1FC-4739-94FA-1D7D33145DE1}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>InfiniteRunner</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <IncludePath>..\gl_includes;$(IncludePath)</IncludePath>
+    <LibraryPath>..\gl_libs;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>_DEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>
+      </PrecompiledHeader>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>NDEBUG;_WINDOWS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="Chunk.cpp" />
+    <ClCompile Include="ChunkGenerator.cpp" />
+    <ClCompile Include="ChunkRow.cpp" />
+    <ClCompile Include="ChunkSystem.cpp" />
+    <ClCompile Include="ConfigReader.cpp" />
+    <ClCompile Include="Controller.cpp" />
+    <ClCompile Include="DestroyerMissile.cpp" />
+    <ClCompile Include="EnemyBehavior.cpp" />
+    <ClCompile Include="GameOverHUD.cpp" />
+    <ClCompile Include="HealthChangedEventArgs.cpp" />
+    <ClCompile Include="HealthHud.cpp" />
+    <ClCompile Include="OGLHudObject.cpp" />
+    <ClCompile Include="PlayerController.cpp" />
+    <ClCompile Include="Publisher.cpp" />
+    <ClCompile Include="ScoreChangedEventArgs.cpp" />
+    <ClCompile Include="ScoreHud.cpp" />
+    <ClCompile Include="Win32SoundManager.cpp" />
+    <ClCompile Include="WindowConfigReader.cpp" />
+    <ClCompile Include="Logger.cpp" />
+    <ClCompile Include="WindowsConsoleLogger.cpp" />
+    <ClCompile Include="AssetLoader.cpp" />
+    <ClCompile Include="BMPTextureLoader.cpp" />
+    <ClCompile Include="CoreSystem.cpp" />
+    <ClCompile Include="GameAssetLoader.cpp" />
+    <ClCompile Include="GameEngine.cpp" />
+    <ClCompile Include="ITextureLoader.cpp" />
+    <ClCompile Include="MathUtil.cpp" />
+    <ClCompile Include="StringHelper.cpp" />
+    <ClCompile Include="TextFileReader.cpp" />
+    <ClCompile Include="TheGame.cpp" />
+    <ClCompile Include="BackForthBehavior.cpp" />
+    <ClCompile Include="Behavior.cpp" />
+    <ClCompile Include="RotateYBehavior.cpp" />
+    <ClCompile Include="Camera.cpp" />
+    <ClCompile Include="OGLCamera.cpp" />
+    <ClCompile Include="OGLFirstPersonCamera.cpp" />
+    <ClCompile Include="OGLFixedTargetCamera.cpp" />
+    <ClCompile Include="OGLSphericalCamera.cpp" />
+    <ClCompile Include="GameWorld.cpp" />
+    <ClCompile Include="GraphicsSystem.cpp" />
+    <ClCompile Include="LightSource.cpp" />
+    <ClCompile Include="CharIterator.cpp" />
+    <ClCompile Include="OBJFileLoader.cpp" />
+    <ClCompile Include="OBJMaterialLoader.cpp" />
+    <ClCompile Include="Axis.cpp" />
+    <ClCompile Include="BaseCuboid.cpp" />
+    <ClCompile Include="BaseObject.cpp" />
+    <ClCompile Include="BoundingBox.cpp" />
+    <ClCompile Include="Cuboid.cpp" />
+    <ClCompile Include="GameObject.cpp" />
+    <ClCompile Include="GameObjectManager.cpp" />
+    <ClCompile Include="LineBox.cpp" />
+    <ClCompile Include="ObjectGenerator.cpp" />
+    <ClCompile Include="OGL2DTextDisplay.cpp" />
+    <ClCompile Include="OGL3DCompositeObject.cpp" />
+    <ClCompile Include="OGL3DGroupObject.cpp" />
+    <ClCompile Include="OGL3DObject.cpp" />
+    <ClCompile Include="OGLBufferedObject.cpp" />
+    <ClCompile Include="OGLCompositeFlatSurface.cpp" />
+    <ClCompile Include="OGLGameObject.cpp" />
+    <ClCompile Include="OGLObject.cpp" />
+    <ClCompile Include="OGLTexturedFlatSurface.cpp" />
+    <ClCompile Include="Plane.cpp" />
+    <ClCompile Include="Skybox.cpp" />
+    <ClCompile Include="Sphere.cpp" />
+    <ClCompile Include="TexturedCuboid.cpp" />
+    <ClCompile Include="OGLArrayBuffer.cpp" />
+    <ClCompile Include="OGLElementArrayBuffer.cpp" />
+    <ClCompile Include="OGLGraphicsSystem.cpp" />
+    <ClCompile Include="OGLReferenceFrame.cpp" />
+    <ClCompile Include="OGLReferenceFrameStack.cpp" />
+    <ClCompile Include="OGLViewingFrustum.cpp" />
+    <ClCompile Include="BaseShader.cpp" />
+    <ClCompile Include="OGLBaseShader.cpp" />
+    <ClCompile Include="OGLFragmentShader.cpp" />
+    <ClCompile Include="OGLShaderCompiler.cpp" />
+    <ClCompile Include="OGLShaderManager.cpp" />
+    <ClCompile Include="OGLShaderProgram.cpp" />
+    <ClCompile Include="OGLVertexShader.cpp" />
+    <ClCompile Include="ShaderManager.cpp" />
+    <ClCompile Include="CustomTexture.cpp" />
+    <ClCompile Include="OGL2DTexture.cpp" />
+    <ClCompile Include="OGLFontTexture.cpp" />
+    <ClCompile Include="Texture.cpp" />
+    <ClCompile Include="TextureManager.cpp" />
+    <ClCompile Include="Uniform.cpp" />
+    <ClCompile Include="ViewingFrustum.cpp" />
+    <ClCompile Include="PCInputSystem.cpp" />
+    <ClCompile Include="Main.cpp" />
+    <ClCompile Include="GameWindow.cpp" />
+    <ClCompile Include="GenericWindow.cpp" />
+    <ClCompile Include="Win32OGLWindow.cpp" />
+    <ClCompile Include="Win32Window.cpp" />
+    <ClCompile Include="ITimer.cpp" />
+    <ClCompile Include="WindowsTimer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="Chunk.h" />
+    <ClInclude Include="ChunkGenerator.h" />
+    <ClInclude Include="ChunkRow.h" />
+    <ClInclude Include="ChunkSystem.h" />
+    <ClInclude Include="ConfigReader.h" />
+    <ClInclude Include="Controller.h" />
+    <ClInclude Include="DestroyerMissile.h" />
+    <ClInclude Include="EnemyBehavior.h" />
+    <ClInclude Include="EventTypes.h" />
+    <ClInclude Include="EventArgs.h" />
+    <ClInclude Include="GameOverEventArgs.h" />
+    <ClInclude Include="GameOverHUD.h" />
+    <ClInclude Include="GameResetEventArgs.h" />
+    <ClInclude Include="HealthChangedEventArgs.h" />
+    <ClInclude Include="HealthHud.h" />
+    <ClInclude Include="OGLHudObject.h" />
+    <ClInclude Include="PlayerController.h" />
+    <ClInclude Include="Publisher.h" />
+    <ClInclude Include="ScoreChangedEventArgs.h" />
+    <ClInclude Include="ScoreHud.h" />
+    <ClInclude Include="Subscriber.h" />
+    <ClInclude Include="Win32SoundManager.h" />
+    <ClInclude Include="WindowConfigReader.h" />
+    <ClInclude Include="Logger.h" />
+    <ClInclude Include="WindowsConsoleLogger.h" />
+    <ClInclude Include="AssetLoader.h" />
+    <ClInclude Include="BMPTextureLoader.h" />
+    <ClInclude Include="CoreSystem.h" />
+    <ClInclude Include="EngineTypes.h" />
+    <ClInclude Include="GameAssetLoader.h" />
+    <ClInclude Include="GameEngine.h" />
+    <ClInclude Include="ITextureLoader.h" />
+    <ClInclude Include="MathUtil.h" />
+    <ClInclude Include="RGBA.h" />
+    <ClInclude Include="StringHelper.h" />
+    <ClInclude Include="TextFileReader.h" />
+    <ClInclude Include="TheGame.h" />
+    <ClInclude Include="BackForthBehavior.h" />
+    <ClInclude Include="IBehavior.h" />
+    <ClInclude Include="RotateYBehavior.h" />
+    <ClInclude Include="Camera.h" />
+    <ClInclude Include="OGLCamera.h" />
+    <ClInclude Include="OGLFirstPersonCamera.h" />
+    <ClInclude Include="OGLFixedTargetCamera.h" />
+    <ClInclude Include="OGLSphericalCamera.h" />
+    <ClInclude Include="GameWorld.h" />
+    <ClInclude Include="GraphicsSystem.h" />
+    <ClInclude Include="LightSource.h" />
+    <ClInclude Include="CharIterator.h" />
+    <ClInclude Include="OBJFileLoader.h" />
+    <ClInclude Include="OBJMaterialLoader.h" />
+    <ClInclude Include="Axis.h" />
+    <ClInclude Include="BaseCuboid.h" />
+    <ClInclude Include="BaseObject.h" />
+    <ClInclude Include="BoundingBox.h" />
+    <ClInclude Include="Cuboid.h" />
+    <ClInclude Include="GameObject.h" />
+    <ClInclude Include="GameObjectManager.h" />
+    <ClInclude Include="LineBox.h" />
+    <ClInclude Include="ObjectGenerator.h" />
+    <ClInclude Include="OGL2DTextDisplay.h" />
+    <ClInclude Include="OGL3DCompositeObject.h" />
+    <ClInclude Include="OGL3DGroupObject.h" />
+    <ClInclude Include="OGL3DObject.h" />
+    <ClInclude Include="OGLBufferedObject.h" />
+    <ClInclude Include="OGLCompositeFlatSurface.h" />
+    <ClInclude Include="OGLGameObject.h" />
+    <ClInclude Include="OGLObject.h" />
+    <ClInclude Include="OGLTexturedFlatSurface.h" />
+    <ClInclude Include="Plane.h" />
+    <ClInclude Include="Skybox.h" />
+    <ClInclude Include="Sphere.h" />
+    <ClInclude Include="TexturedCuboid.h" />
+    <ClInclude Include="OGLArrayBuffer.h" />
+    <ClInclude Include="OGLElementArrayBuffer.h" />
+    <ClInclude Include="OGLGraphicsSystem.h" />
+    <ClInclude Include="OGLReferenceFrame.h" />
+    <ClInclude Include="OGLReferenceFrameStack.h" />
+    <ClInclude Include="OGLViewingFrustum.h" />
+    <ClInclude Include="BaseShader.h" />
+    <ClInclude Include="OGLBaseShader.h" />
+    <ClInclude Include="OGLFragmentShader.h" />
+    <ClInclude Include="OGLShaderCompiler.h" />
+    <ClInclude Include="OGLShaderManager.h" />
+    <ClInclude Include="OGLShaderProgram.h" />
+    <ClInclude Include="OGLVertexShader.h" />
+    <ClInclude Include="ShaderManager.h" />
+    <ClInclude Include="CustomTexture.h" />
+    <ClInclude Include="OGL2DTexture.h" />
+    <ClInclude Include="OGLFontTexture.h" />
+    <ClInclude Include="Texture.h" />
+    <ClInclude Include="TextureManager.h" />
+    <ClInclude Include="Uniform.h" />
+    <ClInclude Include="ViewingFrustum.h" />
+    <ClInclude Include="PCInputSystem.h" />
+    <ClInclude Include="GameWindow.h" />
+    <ClInclude Include="GenericWindow.h" />
+    <ClInclude Include="Win32OGLWindow.h" />
+    <ClInclude Include="Win32Window.h" />
+    <ClInclude Include="WindowInfo.h" />
+    <ClInclude Include="ITimer.h" />
+    <ClInclude Include="WindowsTimer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Asteroid.mtl" />
+    <None Include="Asteroid.objfile" />
+    <None Include="astronautglove.obj.mtl" />
+    <None Include="astronautglove.objfile" />
+    <None Include="FragmentShader2D.glsl" />
+    <None Include="Ship.mtl" />
+    <None Include="Ship.objfile" />
+    <None Include="Skybox.mtl" />
+    <None Include="Skybox.objfile" />
+    <None Include="Soyuz.mtl" />
+    <None Include="Soyuz.objfile" />
+    <None Include="TwoTriangle.objfile" />
+    <None Include="GameAssets.data" />
+    <None Include="ShaderAssets.data">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FragmentShader3DIllumination.glsl" />
+    <None Include="FragmentShaderSkybox.glsl" />
+    <None Include="FragmentShaderText.glsl" />
+    <None Include="FragmentShaderTexture.glsl" />
+    <None Include="VertexShader2D.glsl" />
+    <None Include="VertexShader3DIllumination.glsl" />
+    <None Include="VertexShader3DPerspective.glsl" />
+    <None Include="VertexShaderSkybox.glsl" />
+    <None Include="VertexShaderText.glsl" />
+    <None Include="VertexShaderTexture.glsl" />
+    <None Include="window.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="Craterscape.bmp" />
+    <Image Include="CubeMap_Cloudy.bmp" />
+    <Image Include="letters.bmp" />
+    <Image Include="spacegreen.bmp" />
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="SpaceDebris.wav" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

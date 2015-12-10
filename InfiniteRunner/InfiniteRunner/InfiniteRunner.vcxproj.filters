@@ -1,0 +1,775 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Source Files\Configuration">
+      <UniqueIdentifier>{844d25f2-30ea-49a0-8abe-a70a520ca603}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Console">
+      <UniqueIdentifier>{a8a7c25a-97d6-4986-bf2e-d56fa9129375}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core">
+      <UniqueIdentifier>{871dbdaf-5305-45cf-af4e-df7e4c212639}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics">
+      <UniqueIdentifier>{acb2514e-842e-4c88-bca1-731ce50e66c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Input">
+      <UniqueIdentifier>{689abb61-17c0-4935-98cd-1a49a9a93d53}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Presentation">
+      <UniqueIdentifier>{46aa0a2b-c201-49fc-9b8a-0ee5287001dd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Timer">
+      <UniqueIdentifier>{c34dbd73-c60e-476f-b668-20de2e603010}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Lighting">
+      <UniqueIdentifier>{6fb2a4ab-14d5-41dc-8a7b-29182e7cce50}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Cameras">
+      <UniqueIdentifier>{a5b7dc2c-b647-4973-b23d-dc08c9c89db7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Objects">
+      <UniqueIdentifier>{069c20dd-b3ac-413c-9805-2c899f757159}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Shaders">
+      <UniqueIdentifier>{e1397397-8a76-430e-b34f-04d99dc645a7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Textures">
+      <UniqueIdentifier>{1d983710-0954-409e-aec4-dce42687827d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Animations">
+      <UniqueIdentifier>{59d2b7ed-9155-4cc1-83e7-ad9b4694e6b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Graphics\Loaders">
+      <UniqueIdentifier>{3279a6d6-c4c3-491a-b098-463f619e3daa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{38fd166f-4a35-4cad-9b5f-1bf7bd343831}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\config">
+      <UniqueIdentifier>{af02b88b-5ceb-49ba-907a-b9893bd8dcc2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Assets">
+      <UniqueIdentifier>{0dc196c7-6533-454d-8299-cae91aa7b1eb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Assets\Objects">
+      <UniqueIdentifier>{706de0bd-c5b7-4d4e-ab5a-0822527d717d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Assets\Shaders">
+      <UniqueIdentifier>{25d7e30b-f802-405a-9922-575e6abc0a9b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Assets\Textures">
+      <UniqueIdentifier>{f91b784e-9af6-4095-be62-74499914eb1f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Core\Loaders">
+      <UniqueIdentifier>{7ba80e9f-985f-4955-91fd-27893a4beeef}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game">
+      <UniqueIdentifier>{c9d3a2f9-6b8b-499d-96b5-821fd96f50d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\ChunkSystem">
+      <UniqueIdentifier>{4e5cbb03-71ec-4d2a-9abe-1ec10fdef8fa}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Game\Logic">
+      <UniqueIdentifier>{381ad23f-9f9c-4678-80e3-95631412b038}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\Sound">
+      <UniqueIdentifier>{4289fa38-c1d5-448c-a9fe-63fb4461cc83}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GameWindow.cpp">
+      <Filter>Source Files\Presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="GenericWindow.cpp">
+      <Filter>Source Files\Presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32OGLWindow.cpp">
+      <Filter>Source Files\Presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32Window.cpp">
+      <Filter>Source Files\Presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="ITimer.cpp">
+      <Filter>Source Files\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsTimer.cpp">
+      <Filter>Source Files\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="PCInputSystem.cpp">
+      <Filter>Source Files\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="GameWorld.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="GraphicsSystem.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLArrayBuffer.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLElementArrayBuffer.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLGraphicsSystem.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLReferenceFrame.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLReferenceFrameStack.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLViewingFrustum.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="Uniform.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="ViewingFrustum.cpp">
+      <Filter>Source Files\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="BackForthBehavior.cpp">
+      <Filter>Source Files\Graphics\Animations</Filter>
+    </ClCompile>
+    <ClCompile Include="Behavior.cpp">
+      <Filter>Source Files\Graphics\Animations</Filter>
+    </ClCompile>
+    <ClCompile Include="RotateYBehavior.cpp">
+      <Filter>Source Files\Graphics\Animations</Filter>
+    </ClCompile>
+    <ClCompile Include="LightSource.cpp">
+      <Filter>Source Files\Graphics\Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="Camera.cpp">
+      <Filter>Source Files\Graphics\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLCamera.cpp">
+      <Filter>Source Files\Graphics\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLFirstPersonCamera.cpp">
+      <Filter>Source Files\Graphics\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLSphericalCamera.cpp">
+      <Filter>Source Files\Graphics\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="CustomTexture.cpp">
+      <Filter>Source Files\Graphics\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="OGL2DTexture.cpp">
+      <Filter>Source Files\Graphics\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLFontTexture.cpp">
+      <Filter>Source Files\Graphics\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="Texture.cpp">
+      <Filter>Source Files\Graphics\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="TextureManager.cpp">
+      <Filter>Source Files\Graphics\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseShader.cpp">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLBaseShader.cpp">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLFragmentShader.cpp">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLShaderCompiler.cpp">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLShaderManager.cpp">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLShaderProgram.cpp">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLVertexShader.cpp">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="ShaderManager.cpp">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Axis.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseCuboid.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="BaseObject.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="BoundingBox.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Cuboid.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObject.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="GameObjectManager.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="LineBox.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ObjectGenerator.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="OGL2DTextDisplay.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="OGL3DCompositeObject.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="OGL3DObject.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLBufferedObject.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLCompositeFlatSurface.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLGameObject.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLObject.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLTexturedFlatSurface.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Plane.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Sphere.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="TexturedCuboid.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="Logger.cpp">
+      <Filter>Source Files\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowsConsoleLogger.cpp">
+      <Filter>Source Files\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="CoreSystem.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="GameEngine.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="MathUtil.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="ConfigReader.cpp">
+      <Filter>Source Files\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="WindowConfigReader.cpp">
+      <Filter>Source Files\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="Skybox.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLFixedTargetCamera.cpp">
+      <Filter>Source Files\Graphics\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="OBJFileLoader.cpp">
+      <Filter>Source Files\Graphics\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="OBJMaterialLoader.cpp">
+      <Filter>Source Files\Graphics\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="StringHelper.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="OGL3DGroupObject.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="AssetLoader.cpp">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="BMPTextureLoader.cpp">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="CharIterator.cpp">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="GameAssetLoader.cpp">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="ITextureLoader.cpp">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="TextFileReader.cpp">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClCompile>
+    <ClCompile Include="Publisher.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="OGLHudObject.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreHud.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="ScoreChangedEventArgs.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthChangedEventArgs.cpp">
+      <Filter>Source Files\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="HealthHud.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="TheGame.cpp">
+      <Filter>Source Files\Game</Filter>
+    </ClCompile>
+    <ClCompile Include="Chunk.cpp">
+      <Filter>Source Files\Game\ChunkSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ChunkGenerator.cpp">
+      <Filter>Source Files\Game\ChunkSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ChunkRow.cpp">
+      <Filter>Source Files\Game\ChunkSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="ChunkSystem.cpp">
+      <Filter>Source Files\Game\ChunkSystem</Filter>
+    </ClCompile>
+    <ClCompile Include="Controller.cpp">
+      <Filter>Source Files\Game\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerController.cpp">
+      <Filter>Source Files\Game\Logic</Filter>
+    </ClCompile>
+    <ClCompile Include="Win32SoundManager.cpp">
+      <Filter>Source Files\Sound</Filter>
+    </ClCompile>
+    <ClCompile Include="GameOverHUD.cpp">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="EnemyBehavior.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="DestroyerMissile.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GameWindow.h">
+      <Filter>Source Files\Presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="GenericWindow.h">
+      <Filter>Source Files\Presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32OGLWindow.h">
+      <Filter>Source Files\Presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32Window.h">
+      <Filter>Source Files\Presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowInfo.h">
+      <Filter>Source Files\Presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="ITimer.h">
+      <Filter>Source Files\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsTimer.h">
+      <Filter>Source Files\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="PCInputSystem.h">
+      <Filter>Source Files\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="GameWorld.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="GraphicsSystem.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLArrayBuffer.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLElementArrayBuffer.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLGraphicsSystem.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLReferenceFrame.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLReferenceFrameStack.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLViewingFrustum.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="Uniform.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="ViewingFrustum.h">
+      <Filter>Source Files\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="BackForthBehavior.h">
+      <Filter>Source Files\Graphics\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="RotateYBehavior.h">
+      <Filter>Source Files\Graphics\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="LightSource.h">
+      <Filter>Source Files\Graphics\Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="Camera.h">
+      <Filter>Source Files\Graphics\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLCamera.h">
+      <Filter>Source Files\Graphics\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLFirstPersonCamera.h">
+      <Filter>Source Files\Graphics\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLSphericalCamera.h">
+      <Filter>Source Files\Graphics\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="CustomTexture.h">
+      <Filter>Source Files\Graphics\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="OGL2DTexture.h">
+      <Filter>Source Files\Graphics\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLFontTexture.h">
+      <Filter>Source Files\Graphics\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="Texture.h">
+      <Filter>Source Files\Graphics\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="TextureManager.h">
+      <Filter>Source Files\Graphics\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseShader.h">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLBaseShader.h">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLFragmentShader.h">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLShaderCompiler.h">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLShaderManager.h">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLShaderProgram.h">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLVertexShader.h">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="ShaderManager.h">
+      <Filter>Source Files\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="Axis.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseCuboid.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="BaseObject.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="BoundingBox.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Cuboid.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObject.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameObjectManager.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="LineBox.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="ObjectGenerator.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="OGL2DTextDisplay.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="OGL3DCompositeObject.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="OGL3DObject.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLBufferedObject.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLCompositeFlatSurface.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLGameObject.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLObject.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLTexturedFlatSurface.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Plane.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Sphere.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="TexturedCuboid.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="Logger.h">
+      <Filter>Source Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowsConsoleLogger.h">
+      <Filter>Source Files\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="CoreSystem.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameEngine.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="MathUtil.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="RGBA.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="ConfigReader.h">
+      <Filter>Source Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="WindowConfigReader.h">
+      <Filter>Source Files\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="Skybox.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLFixedTargetCamera.h">
+      <Filter>Source Files\Graphics\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="OBJFileLoader.h">
+      <Filter>Source Files\Graphics\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="OBJMaterialLoader.h">
+      <Filter>Source Files\Graphics\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="StringHelper.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="EngineTypes.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="OGL3DGroupObject.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="IBehavior.h">
+      <Filter>Source Files\Graphics\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="AssetLoader.h">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="BMPTextureLoader.h">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="CharIterator.h">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="GameAssetLoader.h">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="ITextureLoader.h">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="TextFileReader.h">
+      <Filter>Source Files\Core\Loaders</Filter>
+    </ClInclude>
+    <ClInclude Include="EventTypes.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="EventArgs.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Subscriber.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="Publisher.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="OGLHudObject.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreHud.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="ScoreChangedEventArgs.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthChangedEventArgs.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="HealthHud.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="TheGame.h">
+      <Filter>Source Files\Game</Filter>
+    </ClInclude>
+    <ClInclude Include="Chunk.h">
+      <Filter>Source Files\Game\ChunkSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ChunkGenerator.h">
+      <Filter>Source Files\Game\ChunkSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ChunkRow.h">
+      <Filter>Source Files\Game\ChunkSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="ChunkSystem.h">
+      <Filter>Source Files\Game\ChunkSystem</Filter>
+    </ClInclude>
+    <ClInclude Include="Controller.h">
+      <Filter>Source Files\Game\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerController.h">
+      <Filter>Source Files\Game\Logic</Filter>
+    </ClInclude>
+    <ClInclude Include="Win32SoundManager.h">
+      <Filter>Source Files\Sound</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOverEventArgs.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="GameOverHUD.h">
+      <Filter>Source Files\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="GameResetEventArgs.h">
+      <Filter>Source Files\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="EnemyBehavior.h">
+      <Filter>Source Files\Graphics\Animations</Filter>
+    </ClInclude>
+    <ClInclude Include="DestroyerMissile.h">
+      <Filter>Source Files\Graphics\Animations</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="GameAssets.data">
+      <Filter>Resources\Assets</Filter>
+    </None>
+    <None Include="ShaderAssets.data">
+      <Filter>Resources\Assets</Filter>
+    </None>
+    <None Include="FragmentShader3DIllumination.glsl">
+      <Filter>Resources\Assets\Shaders</Filter>
+    </None>
+    <None Include="FragmentShaderText.glsl">
+      <Filter>Resources\Assets\Shaders</Filter>
+    </None>
+    <None Include="FragmentShaderTexture.glsl">
+      <Filter>Resources\Assets\Shaders</Filter>
+    </None>
+    <None Include="VertexShader3DIllumination.glsl">
+      <Filter>Resources\Assets\Shaders</Filter>
+    </None>
+    <None Include="VertexShader3DPerspective.glsl">
+      <Filter>Resources\Assets\Shaders</Filter>
+    </None>
+    <None Include="VertexShaderText.glsl">
+      <Filter>Resources\Assets\Shaders</Filter>
+    </None>
+    <None Include="VertexShaderTexture.glsl">
+      <Filter>Resources\Assets\Shaders</Filter>
+    </None>
+    <None Include="window.config">
+      <Filter>Resources\config</Filter>
+    </None>
+    <None Include="FragmentShaderSkybox.glsl">
+      <Filter>Resources\Assets\Shaders</Filter>
+    </None>
+    <None Include="VertexShaderSkybox.glsl">
+      <Filter>Resources\Assets\Shaders</Filter>
+    </None>
+    <None Include="TwoTriangle.objfile">
+      <Filter>Resources\Assets\Objects</Filter>
+    </None>
+    <None Include="Skybox.objfile">
+      <Filter>Resources\Assets\Objects</Filter>
+    </None>
+    <None Include="Skybox.mtl">
+      <Filter>Resources\Assets\Objects</Filter>
+    </None>
+    <None Include="VertexShader2D.glsl">
+      <Filter>Resources\Assets\Shaders</Filter>
+    </None>
+    <None Include="FragmentShader2D.glsl">
+      <Filter>Resources\Assets\Shaders</Filter>
+    </None>
+    <None Include="Ship.mtl">
+      <Filter>Resources\Assets\Objects</Filter>
+    </None>
+    <None Include="Ship.objfile">
+      <Filter>Resources\Assets\Objects</Filter>
+    </None>
+    <None Include="Asteroid.mtl">
+      <Filter>Resources\Assets\Objects</Filter>
+    </None>
+    <None Include="Asteroid.objfile">
+      <Filter>Resources\Assets\Objects</Filter>
+    </None>
+    <None Include="astronautglove.obj.mtl">
+      <Filter>Resources\Assets\Objects</Filter>
+    </None>
+    <None Include="astronautglove.objfile">
+      <Filter>Resources\Assets\Objects</Filter>
+    </None>
+    <None Include="Soyuz.mtl">
+      <Filter>Resources\Assets\Objects</Filter>
+    </None>
+    <None Include="Soyuz.objfile">
+      <Filter>Resources\Assets\Objects</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="letters.bmp">
+      <Filter>Resources\Assets\Textures</Filter>
+    </Image>
+    <Image Include="CubeMap_Cloudy.bmp">
+      <Filter>Resources\Assets\Textures</Filter>
+    </Image>
+    <Image Include="Craterscape.bmp">
+      <Filter>Resources\Assets\Textures</Filter>
+    </Image>
+    <Image Include="spacegreen.bmp">
+      <Filter>Resources\Assets\Textures</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <Media Include="SpaceDebris.wav">
+      <Filter>Resources\Assets</Filter>
+    </Media>
+  </ItemGroup>
+</Project>

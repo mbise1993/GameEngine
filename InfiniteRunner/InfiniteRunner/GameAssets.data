@@ -1,0 +1,226 @@
+<assets>
+  <textures>
+    BMP, letters.bmp, Letters
+    BMP, spacegreen.bmp, SkyboxBottom
+    BMP, spacegreen.bmp, SkyboxTop
+    BMP, spacegreen.bmp, SkyboxFront
+    BMP, spacegreen.bmp, SkyboxBack
+    BMP, spacegreen.bmp, SkyboxLeft
+    BMP, spacegreen.bmp, SkyboxRight
+  </textures>
+  <gameobjects>
+    <localLightSources>
+      8.0f, 9.0f, 8.0f, 0.4f
+      -8.0f, 9.0f, -8.0f, 0.5f
+    </localLightSources>
+
+    <skybox>
+      <name>
+        Skybox
+      </name>
+      <size>
+        50.0f
+      </size>
+      <textureNames>
+        <bottom>
+          SkyboxBottom
+        </bottom>
+        <top>
+          SkyboxTop
+        </top>
+        <front>
+          SkyboxFront
+        </front>
+        <back>
+          SkyboxBack
+        </back>
+        <left>
+          SkyboxLeft
+        </left>
+        <right>
+          SkyboxRight
+        </right>
+      </textureNames>
+      <shaderName>
+        SkyboxShader
+      </shaderName>
+    </skybox>
+        
+    <objFile>
+      <name>
+        Player
+      </name>
+      <fileName>
+        Ship.objfile
+      </fileName>
+      <transforms>
+        <scale>
+          0.4f
+        </scale>
+      </transforms>
+      <shaderName>
+        ShaderProgramIllumination
+      </shaderName>
+    </objFile>
+
+    <objFile>
+      <name>
+        DepthCharge
+      </name>
+      <fileName>
+        depthcharge.objfile
+      </fileName>
+      <transforms>
+        <scale>
+          1.6f
+        </scale>
+      </transforms>
+      <shaderName>
+        ShaderProgramIllumination
+      </shaderName>
+    </objFile>
+
+    <objFile>
+      <name>
+        Amo
+      </name>
+      <fileName>
+        depthcharge.objfile
+      </fileName>
+      <shaderName>
+        ShaderProgramIllumination
+      </shaderName>
+    </objFile>
+
+  </gameobjects>
+
+  <chunkSystemData>
+
+    <chunkSettings>
+      <chunkDimensions>
+        8.0f
+      </chunkDimensions>
+      <rowRadius>
+        3.0f
+      </rowRadius>
+      <generationDensity>
+        0.5f
+      </generationDensity>
+    </chunkSettings>
+
+    <chunkObjects>
+
+      <objFile>
+        <name>
+          Asteroid
+        </name>
+        <fileName>
+          Asteroid.objfile
+        </fileName>
+        <transforms>
+          <scale>
+            0.5f
+          </scale>
+          <rotateY>
+            90.0f
+          </rotateY>
+        </transforms>
+        <behavior>
+          <behaviorType>
+            RotateYBehavior
+          </behaviorType>
+          <args>
+            45.0f
+          </args>
+        </behavior>
+        <shaderName>
+          TextureShader
+        </shaderName>
+      </objFile>
+
+      <objFile>
+        <name>
+          Asteroid_Tiny
+        </name>
+        <fileName>
+          Asteroid.objfile
+        </fileName>
+        <transforms>
+          <scale>
+            0.1f
+          </scale>
+          <rotateY>
+            -40.0f
+          </rotateY>
+        </transforms>
+        <behavior>
+          <behaviorType>
+            RotateYBehavior
+          </behaviorType>
+          <args>
+            45.0f
+          </args>
+        </behavior>
+        <shaderName>
+          TextureShader
+        </shaderName>
+      </objFile>
+
+      <objFile>
+        <name>
+          Glove
+        </name>
+        <fileName>
+          astronautglove.objfile
+        </fileName>
+        <transforms>
+          <scale>
+            0.7f
+          </scale>
+        </transforms>
+        <behavior>
+          <behaviorType>
+            RotateYBehavior
+          </behaviorType>
+          <args>
+            10.0f
+          </args>
+        </behavior>
+        <shaderName>
+          ShaderProgramIllumination
+        </shaderName>
+      </objFile>
+
+      <objFile>
+        <name>
+          Soyuz
+        </name>
+        <fileName>
+          Soyuz.objfile
+        </fileName>
+        <transforms>
+          <scale>
+            1.0f
+          </scale>
+          <rotateY>
+            -90.0f
+          </rotateY>
+        </transforms>
+        <behavior>
+          <behaviorType>
+            RotateYBehavior
+          </behaviorType>
+          <args>
+            10.0f
+          </args>
+        </behavior>
+        <shaderName>
+          ShaderProgramIllumination
+        </shaderName>
+      </objFile>
+    
+    </chunkObjects>
+
+  </chunkSystemData>
+</assets>
+
