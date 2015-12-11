@@ -1,0 +1,420 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resources">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source">
+      <UniqueIdentifier>{0744f888-12fa-436d-8674-22202cad1e9e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Presentation">
+      <UniqueIdentifier>{44314cd5-5041-4fe1-84a5-5b9451c61796}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Graphics">
+      <UniqueIdentifier>{d2dddb86-1ac1-47c4-9621-8d083aa1b7d0}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Timer">
+      <UniqueIdentifier>{633eeb26-3577-4d8e-98d0-682efbd878cf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Core">
+      <UniqueIdentifier>{3e86341f-0458-48a9-80e7-8eda7833d7ce}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Console">
+      <UniqueIdentifier>{8bd6584d-9e76-4896-a212-a9ab1d3438a2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Input">
+      <UniqueIdentifier>{2129a5fb-c314-4e71-a783-86bc3349ea03}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Sound">
+      <UniqueIdentifier>{6f07db08-8ca1-4e91-bf4b-a0d13a1f1906}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Graphics\Shaders">
+      <UniqueIdentifier>{7736e31c-74fe-4665-a908-4fcf99ed9a1b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Graphics\Cameras">
+      <UniqueIdentifier>{f5b5fd84-93c2-42ea-9f2e-37be238e47d2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Graphics\Objects">
+      <UniqueIdentifier>{4f85317c-41d0-40fb-b607-7fa651aff959}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Configuration">
+      <UniqueIdentifier>{5a09f930-2c0b-44be-a9a3-99e042125c5f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Scenes">
+      <UniqueIdentifier>{647404d1-fb37-46b8-9bc2-dab76fe0ddf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Resources\Shaders">
+      <UniqueIdentifier>{fca7808c-9daf-4742-ae9d-01a0326b2254}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Graphics\Animation">
+      <UniqueIdentifier>{b65b08fd-a033-43d6-bdf5-a9ca4ad8aff7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Graphics\Lighting">
+      <UniqueIdentifier>{2fa944fe-08ff-4417-8890-d52c21929e2c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Graphics\Textures">
+      <UniqueIdentifier>{30572fb7-12ed-4ef0-b737-019417900cfb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source\Configuration">
+      <UniqueIdentifier>{8177ce10-1a29-4eda-a169-38dbd973d6ec}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Main.cpp">
+      <Filter>Source</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Console\Logger.cpp">
+      <Filter>Source\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Console\WindowsConsoleLogger.cpp">
+      <Filter>Source\Console</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Shaders\BaseShader.cpp">
+      <Filter>Source\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Shaders\OGLBaseShader.cpp">
+      <Filter>Source\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Shaders\OGLFragmentShader.cpp">
+      <Filter>Source\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Shaders\OGLShaderCompiler.cpp">
+      <Filter>Source\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Shaders\OGLShaderManager.cpp">
+      <Filter>Source\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Shaders\OGLShaderProgram.cpp">
+      <Filter>Source\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Shaders\OGLVertexShader.cpp">
+      <Filter>Source\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Shaders\ShaderManager.cpp">
+      <Filter>Source\Graphics\Shaders</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Cameras\Camera.cpp">
+      <Filter>Source\Graphics\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Cameras\OGLCamera.cpp">
+      <Filter>Source\Graphics\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Cameras\OGLSphericalCamera.cpp">
+      <Filter>Source\Graphics\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Objects\GameObject.cpp">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Objects\GameObjectManager.cpp">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Objects\ObjectLoader.cpp">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Objects\OGL3DObject.cpp">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Objects\OGLObject.cpp">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\GameWorld.cpp">
+      <Filter>Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\GraphicsSystem.cpp">
+      <Filter>Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\OGLGraphicsSystem.cpp">
+      <Filter>Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\OGLReferenceFrame.cpp">
+      <Filter>Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\OGLViewingFrustum.cpp">
+      <Filter>Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\ViewingFrustum.cpp">
+      <Filter>Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Input\PCInputSystem.cpp">
+      <Filter>Source\Input</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Presentation\GameWindow.cpp">
+      <Filter>Source\Presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Presentation\GenericWindow.cpp">
+      <Filter>Source\Presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Presentation\Win32OGLWindow.cpp">
+      <Filter>Source\Presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Presentation\Win32Window.cpp">
+      <Filter>Source\Presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Presentation\WindowInfo.cpp">
+      <Filter>Source\Presentation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Core\TextFileReader.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Core\CoreSystem.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Core\GameEngine.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Animation\Behavior.cpp">
+      <Filter>Source\Graphics\Animation</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Timer\ITimer.cpp">
+      <Filter>Source\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Timer\WindowsTimer.cpp">
+      <Filter>Source\Timer</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Objects\OGLObjectLoader.cpp">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Cameras\OGLFirstPersonCamera.cpp">
+      <Filter>Source\Graphics\Cameras</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Textures\Texture.cpp">
+      <Filter>Source\Graphics\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Textures\TextureReader.cpp">
+      <Filter>Source\Graphics\Textures</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Core\ImageFileReader.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Core\BMPImageReader.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Core\TheGame.cpp">
+      <Filter>Source\Core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Objects\OGL3DCompositeObject.cpp">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\OGLReferenceFrameStack.cpp">
+      <Filter>Source\Graphics</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Lighting\LightSource.cpp">
+      <Filter>Source\Graphics\Lighting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Configuration\ConfigReader.cpp">
+      <Filter>Source\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Configuration\WindowConfigReader.cpp">
+      <Filter>Source\Configuration</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Objects\Room.cpp">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Objects\FlatSurface.cpp">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\Source\Graphics\Objects\OGLObjectReader.cpp">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\Console\Logger.h">
+      <Filter>Source\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Console\WindowsConsoleLogger.h">
+      <Filter>Source\Console</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Core\RGBA.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Shaders\BaseShader.h">
+      <Filter>Source\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Shaders\OGLBaseShader.h">
+      <Filter>Source\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Shaders\OGLFragmentShader.h">
+      <Filter>Source\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Shaders\OGLShaderCompiler.h">
+      <Filter>Source\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Shaders\OGLShaderManager.h">
+      <Filter>Source\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Shaders\OGLShaderProgram.h">
+      <Filter>Source\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Shaders\OGLVertexShader.h">
+      <Filter>Source\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Shaders\ShaderManager.h">
+      <Filter>Source\Graphics\Shaders</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Cameras\Camera.h">
+      <Filter>Source\Graphics\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Cameras\OGLCamera.h">
+      <Filter>Source\Graphics\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Cameras\OGLSphericalCamera.h">
+      <Filter>Source\Graphics\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Objects\GameObject.h">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Objects\GameObjectManager.h">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Objects\ObjectLoader.h">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Objects\OGL3DObject.h">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Objects\OGLObject.h">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\GameWorld.h">
+      <Filter>Source\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\GraphicsSystem.h">
+      <Filter>Source\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\OGLGraphicsSystem.h">
+      <Filter>Source\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\OGLReferenceFrame.h">
+      <Filter>Source\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\OGLViewingFrustum.h">
+      <Filter>Source\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\ViewingFrustum.h">
+      <Filter>Source\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Input\PCInputSystem.h">
+      <Filter>Source\Input</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Presentation\GameWindow.h">
+      <Filter>Source\Presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Presentation\GenericWindow.h">
+      <Filter>Source\Presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Presentation\Win32OGLWindow.h">
+      <Filter>Source\Presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Presentation\Win32Window.h">
+      <Filter>Source\Presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Presentation\WindowInfo.h">
+      <Filter>Source\Presentation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Core\TextFileReader.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Core\CoreSystem.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Core\GameEngine.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Core\MathUtil.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Animation\IBehavior.h">
+      <Filter>Source\Graphics\Animation</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Timer\ITimer.h">
+      <Filter>Source\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Timer\WindowsTimer.h">
+      <Filter>Source\Timer</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Objects\ElementArray.h">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Objects\OGLObjectLoader.h">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Cameras\OGLFirstPersonCamera.h">
+      <Filter>Source\Graphics\Cameras</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Vertex.h">
+      <Filter>Source\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Material.h">
+      <Filter>Source\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Textures\Texture.h">
+      <Filter>Source\Graphics\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Textures\TextureReader.h">
+      <Filter>Source\Graphics\Textures</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Core\ImageFileReader.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Core\BMPImageReader.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Core\TheGame.h">
+      <Filter>Source\Core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Objects\OGL3DCompositeObject.h">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\OGLReferenceFrameStack.h">
+      <Filter>Source\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Uniform.h">
+      <Filter>Source\Graphics</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Lighting\LightSource.h">
+      <Filter>Source\Graphics\Lighting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Configuration\ConfigReader.h">
+      <Filter>Source\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Configuration\WindowConfigReader.h">
+      <Filter>Source\Configuration</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Objects\Room.h">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Objects\FlatSurface.h">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\Source\Graphics\Objects\OGLObjectReader.h">
+      <Filter>Source\Graphics\Objects</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\Configuration\window.config">
+      <Filter>Resources\Configuration</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\VertexShader3DPerspective.glsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Scenes\Project2.2ds">
+      <Filter>Resources\Scenes</Filter>
+    </None>
+    <None Include="..\..\Resources\Scenes\TestScene.2ds">
+      <Filter>Resources\Scenes</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\FragmentShader3DIllumination.glsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\VertexShader3DIllumination.glsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\FragmentShaderTexture.glsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+    <None Include="..\..\Resources\Shaders\VertexShaderTexture.glsl">
+      <Filter>Resources\Shaders</Filter>
+    </None>
+  </ItemGroup>
+</Project>

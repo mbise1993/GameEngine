@@ -1,0 +1,12 @@
+# Blender MTL File: 'Guitar.blend'
+# Material Count: 1
+
+newmtl Material
+Ns 96.078431
+Ka 1.000000 1.000000 1.000000
+Kd 0.202354 0.143017 0.033288
+Ks 0.087072 0.060869 0.013221
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2

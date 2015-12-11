@@ -1,0 +1,275 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="14.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{F2943A39-949F-4874-B50A-1D02C870EA8D}</ProjectGuid>
+    <RootNamespace>GameEngine</RootNamespace>
+    <WindowsTargetPlatformVersion>8.1</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v140</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\GameEngineProperties.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\GameEngineProperties.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\GameEngineProperties.props" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+    <Import Project="..\GameEngineProperties.props" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\glew-1.13.0\include\;C:\glsdk_0_5_2\glm;C:\glsdk_0_5_2\glutil\include;C:\glsdk_0_5_2\boost;C:\openal-1.1\include;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;C:\glew-1.13.0\lib\Release\Win32\;C:\glsdk_0_5_2\glutil\lib;C:\openal-1.1\libs\Win32;</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(VC_IncludePath);$(WindowsSDK_IncludePath);C:\glew-1.13.0\include\;C:\glsdk_0_5_2\glm;C:\glsdk_0_5_2\glutil\include;C:\glsdk_0_5_2\boost;C:\openal-1.1\include;</IncludePath>
+    <LibraryPath>$(VC_LibraryPath_x86);$(WindowsSDK_LibraryPath_x86);$(NETFXKitsDir)Lib\um\x86;C:\glew-1.13.0\lib\Release\Win32\;C:\glsdk_0_5_2\glutil\lib;C:\openal-1.1\libs\Win32;</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\Source\Configuration\;..\..\Source\Presentation\;..\..\Source\Graphics\;..\..\Source\Core\;..\..\Source\Console\;..\..\Source\Input\;..\..\Source\Timer\;..\..\Source\Sound\;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <AdditionalIncludeDirectories>..\..\Source\Configuration\;..\..\Source\Presentation\;..\..\Source\Graphics\;..\..\Source\Core\;..\..\Source\Console\;..\..\Source\Input\;..\..\Source\Timer\;..\..\Source\Sound\;</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\Source\Configuration\ConfigReader.cpp" />
+    <ClCompile Include="..\..\Source\Configuration\WindowConfigReader.cpp" />
+    <ClCompile Include="..\..\Source\Console\Logger.cpp" />
+    <ClCompile Include="..\..\Source\Console\WindowsConsoleLogger.cpp" />
+    <ClCompile Include="..\..\Source\Core\BMPImageReader.cpp" />
+    <ClCompile Include="..\..\Source\Core\CoreSystem.cpp" />
+    <ClCompile Include="..\..\Source\Core\GameEngine.cpp" />
+    <ClCompile Include="..\..\Source\Core\ImageFileReader.cpp" />
+    <ClCompile Include="..\..\Source\Core\TextFileReader.cpp" />
+    <ClCompile Include="..\..\Source\Core\TheGame.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Animation\BackForthBehavior.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Animation\Behavior.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Animation\PatrolBehavior.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Animation\RotateYBehavior.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Cameras\Camera.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Cameras\OGLCamera.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Cameras\OGLFirstPersonCamera.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Cameras\OGLSphericalCamera.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\GameWorld.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\GraphicsSystem.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Lighting\LightSource.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Objects\Cat.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Objects\Cuboid.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Objects\FlatSurface.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Objects\GameObject.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Objects\GameObjectManager.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Objects\Corrider.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Objects\Guitarist.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Objects\ObjectLoader.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Objects\OGLObjectReader.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Objects\OGL3DCompositeObject.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Objects\OGL3DObject.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Objects\OGLObject.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Objects\OGLObjectLoader.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Objects\Room.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\OGLGraphicsSystem.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\OGLReferenceFrame.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\OGLReferenceFrameStack.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\OGLViewingFrustum.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Shaders\BaseShader.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Shaders\OGLBaseShader.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Shaders\OGLFragmentShader.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Shaders\OGLShaderCompiler.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Shaders\OGLShaderManager.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Shaders\OGLShaderProgram.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Shaders\OGLVertexShader.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Shaders\ShaderManager.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Textures\Texture.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\Textures\TextureReader.cpp" />
+    <ClCompile Include="..\..\Source\Graphics\ViewingFrustum.cpp" />
+    <ClCompile Include="..\..\Source\Input\PCInputSystem.cpp" />
+    <ClCompile Include="..\..\Source\Main.cpp" />
+    <ClCompile Include="..\..\Source\Presentation\GameWindow.cpp" />
+    <ClCompile Include="..\..\Source\Presentation\GenericWindow.cpp" />
+    <ClCompile Include="..\..\Source\Presentation\Win32OGLWindow.cpp" />
+    <ClCompile Include="..\..\Source\Presentation\Win32Window.cpp" />
+    <ClCompile Include="..\..\Source\Presentation\WindowInfo.cpp" />
+    <ClCompile Include="..\..\Source\Timer\ITimer.cpp" />
+    <ClCompile Include="..\..\Source\Timer\WindowsTimer.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\Source\Configuration\ConfigReader.h" />
+    <ClInclude Include="..\..\Source\Configuration\WindowConfigReader.h" />
+    <ClInclude Include="..\..\Source\Console\Logger.h" />
+    <ClInclude Include="..\..\Source\Console\WindowsConsoleLogger.h" />
+    <ClInclude Include="..\..\Source\Core\BMPImageReader.h" />
+    <ClInclude Include="..\..\Source\Core\CoreSystem.h" />
+    <ClInclude Include="..\..\Source\Core\GameEngine.h" />
+    <ClInclude Include="..\..\Source\Core\ImageFileReader.h" />
+    <ClInclude Include="..\..\Source\Core\MathUtil.h" />
+    <ClInclude Include="..\..\Source\Core\RGBA.h" />
+    <ClInclude Include="..\..\Source\Core\TextFileReader.h" />
+    <ClInclude Include="..\..\Source\Core\TheGame.h" />
+    <ClInclude Include="..\..\Source\Graphics\Animation\BackForthBehavior.h" />
+    <ClInclude Include="..\..\Source\Graphics\Animation\IBehavior.h" />
+    <ClInclude Include="..\..\Source\Graphics\Animation\PatrolBehavior.h" />
+    <ClInclude Include="..\..\Source\Graphics\Animation\RotateYBehavior.h" />
+    <ClInclude Include="..\..\Source\Graphics\Cameras\Camera.h" />
+    <ClInclude Include="..\..\Source\Graphics\Cameras\OGLCamera.h" />
+    <ClInclude Include="..\..\Source\Graphics\Cameras\OGLFirstPersonCamera.h" />
+    <ClInclude Include="..\..\Source\Graphics\Cameras\OGLSphericalCamera.h" />
+    <ClInclude Include="..\..\Source\Graphics\GameWorld.h" />
+    <ClInclude Include="..\..\Source\Graphics\GraphicsSystem.h" />
+    <ClInclude Include="..\..\Source\Graphics\Lighting\LightSource.h" />
+    <ClInclude Include="..\..\Source\Graphics\Material.h" />
+    <ClInclude Include="..\..\Source\Graphics\Objects\Cat.h" />
+    <ClInclude Include="..\..\Source\Graphics\Objects\Cuboid.h" />
+    <ClInclude Include="..\..\Source\Graphics\Objects\ElementArray.h" />
+    <ClInclude Include="..\..\Source\Graphics\Objects\FlatSurface.h" />
+    <ClInclude Include="..\..\Source\Graphics\Objects\GameObject.h" />
+    <ClInclude Include="..\..\Source\Graphics\Objects\GameObjectManager.h" />
+    <ClInclude Include="..\..\Source\Graphics\Objects\Corrider.h" />
+    <ClInclude Include="..\..\Source\Graphics\Objects\Guitarist.h" />
+    <ClInclude Include="..\..\Source\Graphics\Objects\ObjectLoader.h" />
+    <ClInclude Include="..\..\Source\Graphics\Objects\OGLObjectReader.h" />
+    <ClInclude Include="..\..\Source\Graphics\Objects\OGL3DCompositeObject.h" />
+    <ClInclude Include="..\..\Source\Graphics\Objects\OGL3DObject.h" />
+    <ClInclude Include="..\..\Source\Graphics\Objects\OGLObject.h" />
+    <ClInclude Include="..\..\Source\Graphics\Objects\OGLObjectLoader.h" />
+    <ClInclude Include="..\..\Source\Graphics\Objects\Room.h" />
+    <ClInclude Include="..\..\Source\Graphics\OGLGraphicsSystem.h" />
+    <ClInclude Include="..\..\Source\Graphics\OGLReferenceFrame.h" />
+    <ClInclude Include="..\..\Source\Graphics\OGLReferenceFrameStack.h" />
+    <ClInclude Include="..\..\Source\Graphics\OGLViewingFrustum.h" />
+    <ClInclude Include="..\..\Source\Graphics\Shaders\BaseShader.h" />
+    <ClInclude Include="..\..\Source\Graphics\Shaders\OGLBaseShader.h" />
+    <ClInclude Include="..\..\Source\Graphics\Shaders\OGLFragmentShader.h" />
+    <ClInclude Include="..\..\Source\Graphics\Shaders\OGLShaderCompiler.h" />
+    <ClInclude Include="..\..\Source\Graphics\Shaders\OGLShaderManager.h" />
+    <ClInclude Include="..\..\Source\Graphics\Shaders\OGLShaderProgram.h" />
+    <ClInclude Include="..\..\Source\Graphics\Shaders\OGLVertexShader.h" />
+    <ClInclude Include="..\..\Source\Graphics\Shaders\ShaderManager.h" />
+    <ClInclude Include="..\..\Source\Graphics\Textures\Texture.h" />
+    <ClInclude Include="..\..\Source\Graphics\Textures\TextureReader.h" />
+    <ClInclude Include="..\..\Source\Graphics\Uniform.h" />
+    <ClInclude Include="..\..\Source\Graphics\Vertex.h" />
+    <ClInclude Include="..\..\Source\Graphics\ViewingFrustum.h" />
+    <ClInclude Include="..\..\Source\Input\PCInputSystem.h" />
+    <ClInclude Include="..\..\Source\Presentation\GameWindow.h" />
+    <ClInclude Include="..\..\Source\Presentation\GenericWindow.h" />
+    <ClInclude Include="..\..\Source\Presentation\Win32OGLWindow.h" />
+    <ClInclude Include="..\..\Source\Presentation\Win32Window.h" />
+    <ClInclude Include="..\..\Source\Presentation\WindowInfo.h" />
+    <ClInclude Include="..\..\Source\Timer\ITimer.h" />
+    <ClInclude Include="..\..\Source\Timer\WindowsTimer.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\..\Resources\Configuration\window.config" />
+    <None Include="..\..\Resources\Scenes\Project2.2ds" />
+    <None Include="..\..\Resources\Scenes\TestScene.2ds" />
+    <None Include="..\..\Resources\Shaders\FragmentShader3DIllumination.glsl" />
+    <None Include="..\..\Resources\Shaders\FragmentShaderTexture.glsl" />
+    <None Include="..\..\Resources\Shaders\VertexShader3DIllumination.glsl" />
+    <None Include="..\..\Resources\Shaders\VertexShader3DPerspective.glsl" />
+    <None Include="..\..\Resources\Shaders\VertexShaderTexture.glsl" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
